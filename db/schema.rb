@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(version: 2021_11_04_025836) do
   end
 
   create_table "roles", force: :cascade do |t|
-    t.string "nome"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
