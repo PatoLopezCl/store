@@ -85,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: store_production
-  username: store
-  password: <%= ENV['STORE_DATABASE_PASSWORD'] %>
+  database: store
+  username: <%= Rails.application.credentials.db_production[:ubuntu] %>
+  password: <%= Rails.application.credentials.db_production[:Patolin0] %>
